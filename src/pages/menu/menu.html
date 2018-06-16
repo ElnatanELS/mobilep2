@@ -1,0 +1,25 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="openAdd()">
+        <ion-icon name="add" item-start></ion-icon>
+        Adicionar
+      </button>
+      <button ion-item (click)="openMenu()">
+          <ion-icon name="star" item-start></ion-icon>
+          Bookmark
+        </button>
+        <button ion-item>
+            <ion-icon name="logo-twitter" item-start></ion-icon>
+            Unifacisa
+          </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>

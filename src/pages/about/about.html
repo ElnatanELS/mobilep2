@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>
+        Códigos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding inset>
+  <ion-list>
+    <button ion-item *ngFor="let c of codigo | async">
+      
+        <h2>{{c.titulo}}</h2>
+        <h3>{{c.ling}}</h3>
+        
+
+    </button>
+  </ion-list>
+</ion-content>
